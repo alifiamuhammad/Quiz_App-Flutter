@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:tubes/start.dart';
+import 'package:tubes/QuizPage.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -70,6 +71,19 @@ class _HomePageState extends State<HomePage> {
                 ),
                 RaisedButton(
                   padding: EdgeInsets.fromLTRB(70, 10, 70, 10),
+                  onPressed: navigateToQuizPage,
+                  child: Text('Start',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold)),
+                  color: Colors.orange,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                ),
+                RaisedButton(
+                  padding: EdgeInsets.fromLTRB(70, 10, 70, 10),
                   onPressed: signOut,
                   child: Text('Signout',
                       style: TextStyle(
@@ -82,7 +96,8 @@ class _HomePageState extends State<HomePage> {
                   ),
                 )
               ],
-            ),
+            ),  
     ));
+    
   }
 }

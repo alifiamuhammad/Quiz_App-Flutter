@@ -27,7 +27,7 @@ class _StartState extends State<Start> {
             Container(
               height: 400,
               child: Image(
-                image: AssetImage("images/start.jpg"),
+                image: AssetImage("images/welcome.jpg"),
                 fit: BoxFit.contain,
               ),
             ),
@@ -41,7 +41,7 @@ class _StartState extends State<Start> {
                         color: Colors.black),
                     children: <TextSpan>[
                   TextSpan(
-                      text: 'QuizApp',
+                      text: 'BrainChallange',
                       style: TextStyle(
                           fontSize: 30.0,
                           fontWeight: FontWeight.bold,
@@ -49,7 +49,7 @@ class _StartState extends State<Start> {
                 ])),
             SizedBox(height: 10.0),
             Text(
-              'Fresh Groceries Delivered at your Doorstep',
+              'Try your Knowledge',
               style: TextStyle(color: Colors.black),
             ),
             SizedBox(height: 30.0),
