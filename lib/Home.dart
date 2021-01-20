@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   getUser() async {
-    User firebaseUser =  _auth.currentUser;
+    User firebaseUser = _auth.currentUser;
     await firebaseUser?.reload();
     firebaseUser = _auth.currentUser;
 
@@ -71,7 +71,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 RaisedButton(
                   padding: EdgeInsets.fromLTRB(70, 10, 70, 10),
-                  onPressed: navigateToQuizPage,
+                  onPressed: () {},
                   child: Text('Start',
                       style: TextStyle(
                           color: Colors.white,
@@ -96,8 +96,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 )
               ],
-            ),  
+            ),
     ));
-    
   }
 }
